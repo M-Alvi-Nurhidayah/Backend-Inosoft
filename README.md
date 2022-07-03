@@ -42,7 +42,28 @@ MongoDB as a non-relational document database.<br>
     ```
 3. Create project Laravel using Composer <br>
     * Create folder wherever you want and create a project using composer
-     ```sh
+    ```sh
       composer create-project laravel/laravel:^8.0 yourappname
     ```
-
+4. MongoDB [Installation] (https://www.mongodb.com/compatibility/mongodb-laravel-intergration) and Configuration <br>
+    There is some steps to install and make a configuration for MongoDB integrated with laravel <br>
+    * Before we can install the MongoDB libraries for Laravel, we need to install the PHP extension for MongoDB. <br>
+    Run the following command
+    [Install](https://www.technhit.in/laravel-mongodb-integration/) MongoDB
+    ```sh
+      curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+      sudo apt update
+      sudo apt install mongodb
+    ```
+    Install the Laravel MongoDB PHP Extension
+    ```sh
+      sudo pecl install mongodb
+    ```
+    You will also need to ensure that the mongodb extension is enabled in your php.ini file. The location of your php.ini file will vary depending on your operating system. Add the following line to your php.ini file:
+    ```sh
+      extension="mongodb.so"
+    ```
+    Lastly, run the following command from your Laravel project directory in order to add the MongoDB package for Laravel:
+    ```sh
+      composer require jenssegers/mongodb 3.8 
+    ```
