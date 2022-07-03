@@ -30,19 +30,17 @@ MongoDB as a non-relational document database.<br>
 
 ## Laravel8 <br>
 ### Requirement
-1. <a href="https://computingforgeeks.com/how-to-install-php-on-ubuntu-2/">PHP Installation</a>
-    <div>
-      Make sure your PHP version using this syntax and write in command line
-      ```sh
-        php -v
-      ```
-    </div>
-
-2. <a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos">Composer Installation</a>
-    <div>
-      Make sure your composer is already installed
-      ```sh
-        composer
-      ```
-    </div>
-3.  
+1. PHP [https://computingforgeeks.com/how-to-install-php-on-ubuntu-2](Installation)
+    Make sure your PHP version using this syntax and write in command line
+    ```sh
+      php -v
+    ```
+2. Composer [https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos](Installation)
+    Make sure your composer is already installed
+    ```sh
+      composer
+    ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
