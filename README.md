@@ -65,5 +65,11 @@ MongoDB as a non-relational document database.<br>
     ```
     Lastly, run the following command from your Laravel project directory in order to add the MongoDB package for Laravel:
     ```sh
-      composer require jenssegers/mongodb 3.8 
+      composer require jenssegers/mongodb:^3.9 
     ```
+    Run the following command from your Laravel project directory in order to add the JWT package for Laravel:
+    ```sh
+      composer require tymon/jwt-auth:dev-develop --prefer-source
+    ```
+    
+ 
