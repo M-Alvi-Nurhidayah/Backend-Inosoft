@@ -71,5 +71,42 @@ MongoDB as a non-relational document database.<br>
     ```sh
       composer require tymon/jwt-auth:dev-develop --prefer-source
     ```
-    
- 
+
+## Installation and Testing <br>
+1. Clone this project into your local file<br>
+    * Paste this command into your terminal
+    ```sh
+      git clone git@github.com:M-Alvi-Nurhidayah/Backend-Inosoft.git
+    ```
+2. Going to repository file that you have done clone and make sure you are inside this project
+    * Install the dependencies of this project using this command line
+    ```sh
+      composer install
+    ```
+    * Do some configuration like database, according to your local database, put in your .env file. Here is some example you can use and paste in your env.
+    ```sh
+      DB_CONNECTION=mongodb
+      DB_HOST=127.0.0.1
+      DB_PORT=27017
+      DB_DATABASE=testdb
+      DB_USERNAME=
+      DB_PASSWORD=
+    ```
+    * Laravel requires you to have an app encryption key which is generally randomly generated and stored in your .env file. The app will use this encryption key to encode various elements of your application from cookies to password hashes and more.
+    Laravel’s command line tools thankfully make it super easy to generate this. In the terminal we can run this command to generate that key
+    ```sh
+      php artisan key:generate
+    ```
+    * Once your credentials are in the .env file, now you can migrate your database.
+    ```sh
+      php artisan migrate
+    ```
+    * (Optional): Seed the database
+    ```sh
+      php artisan db:seed
+    ```
+    * Run the program
+    ```sh
+      php artisan serve
+    ```
+3. Testing this API app. You can use Postman app to do this test.
